@@ -42,7 +42,7 @@ io.on('connection', (clientSocket) => {
 
     // event listener for client socket disconnect
     clientSocket.on('disconnect', () => {
-        console.log('Client disconnected');
+        console.log('Client ' + clientSocket.username + ' disconnected.');
     });
 });
 
